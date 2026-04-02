@@ -1,0 +1,38 @@
+{
+  "duvidas": [
+    {
+      "titulo": "Sintaxe Tailwind",
+      "materia": "Tailwind",
+      "descricao": "Não compreendi a sintaxe ainda",
+      "prioridade": "alta",
+      "status": "resolvida",
+      "criadoEm": "2026-04-02T00:56:41.155Z",
+      "resolvidoEm": "2026-04-02T01:14:46.913Z",
+      "id": 1
+    },
+    {
+      "titulo": "Estudar Frameworks",
+      "materia": "React",
+      "descricao": "Teste\n",
+      "prioridade": "alta",
+      "status": "pendente",
+      "criadoEm": "2026-04-02T01:42:23.917Z",
+      "resolvidoEm": null,
+      "id": 3
+    }
+  ],
+  "materias": [
+    {
+      "id": "1",
+      "nome": "React"
+    },
+    {
+      "id": "2",
+      "nome": "JavaScript"
+    },
+    {
+      "id": "3",
+      "nome": "TypeScript"
+    }
+  ]
+}

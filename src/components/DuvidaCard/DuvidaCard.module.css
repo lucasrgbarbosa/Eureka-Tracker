@@ -1,0 +1,168 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  background-color: transparent;
+  border: 1px solid #334155; 
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition:
+    border-color 0.2s,
+    background-color 0.2s;
+}
+
+.card:hover {
+  border-color: #475569;
+  background-color: rgba(30, 41, 59, 0.3);
+}
+
+
+.btnStatus {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #64748b;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: transparent;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.btnStatus:hover {
+  border-color: #94a3b8;
+}
+
+.btnResolvida {
+  background-color: #10b981; 
+  border-color: #10b981;
+  color: white;
+}
+
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.titulo {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f8fafc;
+  transition: color 0.2s;
+}
+.descricao {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #64748b;
+  overflow-wrap: break-word;
+  word-break: normal; 
+}
+
+.resolvida .titulo {
+  color: #64748b;
+  text-decoration: line-through;
+}
+.resolvida .descricao {
+  color: #475569;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.75rem;
+}
+
+.materia {
+  background-color: #1e293b;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: #cbd5e1;
+}
+
+.prioridade {
+  font-weight: 500;
+}
+.baixa {
+  color: #10b981;
+}
+.media {
+  color: #f59e0b;
+} 
+.alta {
+  color: #ef4444;
+} 
+
+
+.rightActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.dataCriacao, .dataResolvida { 
+  font-size: 0.8rem; 
+  white-space: nowrap; /* Mantém a data numa linha só */
+}
+.dataCriacao { color: #475569; }
+.dataResolvida { color: #10b981; }
+
+.dataMobile {
+  display: none;
+}
+
+
+.btnDelete {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0; 
+  transition:
+    opacity 0.2s,
+    color 0.2s;
+  padding: 4px;
+}
+
+.card:hover .btnDelete {
+  opacity: 0.4; 
+}
+
+.btnDelete:hover {
+  opacity: 1 !important;
+  color: #ef4444;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 600px) {
+  .rightActions {
+    align-items: flex-start;
+  }
+  .dataCriacao,
+  .dataResolvida {
+    display: none;
+  } /* Esconde a data na direita em telas pequenas */
+  .dataMobile {
+    display: block;
+    color: #10b981;
+    font-style: italic;
+  }
+  .btnDelete {
+    opacity: 0.8;
+  } /* Sempre visível no celular */
+}

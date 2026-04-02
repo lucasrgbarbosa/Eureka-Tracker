@@ -1,6 +1,7 @@
 import { Duvida, NovaDuvida, AtualizarDuvida } from '../types';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/duvidas';
+
+const API_URL = import.meta.env.VITE_API_URL;
 
 export const duvidaService = {
   async listar(): Promise<Duvida[]> {

@@ -23,7 +23,7 @@ Uma aplicação web focada em ajudar estudantes a registrar, organizar e resolve
 ## 🧠 Justificativas de Design e UX
 
 - **Por que não há Tailwind?** Optou-se pelo uso de *CSS Modules* para demonstrar forte domínio de CSS puro, separação estrita de responsabilidades e manutenção de um HTML puramente semântico.
-- **Por que há confirmação antes de deletar?** O código utiliza um `window.confirm` na exclusão. Como os dados representam o "esforço de estudo" do usuário, uma exclusão acidental causaria grande frustração. O atrito de um clique a mais é justificado pela segurança dos dados.
+- **Por que há confirmação antes de deletar?** O código utiliza um `SweetAlert2` na exclusão. Como os dados representam o "esforço de estudo" do usuário, uma exclusão acidental causaria grande frustração. O atrito de um clique a mais é justificado pela segurança dos dados.
 - **Isolamento da API:** Todas as chamadas `fetch` foram abstraídas para a pasta `src/services/`, impedindo que os componentes React conheçam detalhes de URLs ou métodos HTTP, facilitando manutenções futuras.
 
 ## 🚀 Como rodar o projeto localmente
@@ -34,7 +34,7 @@ Uma aplicação web focada em ajudar estudantes a registrar, organizar e resolve
 ### Passos
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
+   git clone [https://github.com/lucasrgbarbosa/Eureka-Tracker]
 Entre na pasta do projeto:
 
 Bash
@@ -50,4 +50,4 @@ npm run dev:full
 Acesse no navegador: http://localhost:5173
 
 👨‍💻 Autor
-Desenvolvido por [Seu Nome/Lucas] como parte do Desafio do Módulo 4.
+Desenvolvido por Lucas Ribeiro como parte do Desafio do Módulo 4.

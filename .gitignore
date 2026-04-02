@@ -2,3 +2,4 @@
 node_modules
 packege-lock.json
 vite-env.d.ts
+dist

@@ -2,7 +2,7 @@
 
 Uma aplicação web focada em ajudar estudantes a registrar, organizar e resolver suas dúvidas durante sessões de estudo intensas.
 
-🌍 **Live Demo (Front-end):** [Inserir link da Vercel aqui]
+🌍 **Live Demo (Front-end):** [[Deploy](https://eurekatrackerfront.vercel.app/)]
 ⚙️ **API (Back-end):** [Inserir link do Render/Glitch aqui]
 📄 **Leia o Mini PRD:** [PRD.md](./PRD.md)
 

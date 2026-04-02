@@ -7,7 +7,7 @@
     "dev": "vite",
     "api": "json-server --watch db.json --port 3001",
     "dev:full": "concurrently \"npm run api\" \"npm run dev\"",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "start": "node server.js"
   },
   "dependencies": {
